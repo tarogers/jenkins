@@ -24,10 +24,10 @@ pipeline {
     stage('Run ruby') {
       steps {
         container('ruby') {
-          ls -l
-          pwd
-          ls -l /home/jenkins/agent
-          ruby --version
+          sh 'ls -l'
+          sh 'pwd'
+          sh 'ls -l /home/jenkins/agent'
+          sh 'ruby --version'
         }
       }
     }
