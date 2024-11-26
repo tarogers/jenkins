@@ -28,6 +28,7 @@ pipeline {
           sh 'pwd'
           sh 'ls -l /home/jenkins/agent'
           sh 'ruby --version'
+          sh 'ruby ./helloworld.rb'
         }
       }
     }
