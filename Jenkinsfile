@@ -24,7 +24,10 @@ pipeline {
     stage('Run ruby') {
       steps {
         container('ruby') {
-          sh 'helloworld.rb'
+          ls -l
+          pwd
+          ls -l /home/jenkins/agent
+          ruby --version
         }
       }
     }
