@@ -1,13 +1,11 @@
- #!/usr/bin/env groovy
- 
- pipeline {
-    agent any
+pipeline {
+  agent any
 
-    stages {
-        stage('Hello Pipeline') {
-            steps {
-                echo 'Hello Pipeline'
-            }
-        }
+  stages {
+    stage('Hello Pipeline') {
+      steps {
+        echo 'Hello Pipeline'
+      }
     }
+  }
 }
